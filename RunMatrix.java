@@ -1,27 +1,44 @@
 import java.util.Scanner;
 
 public class RunMatrix {
+
+  public static void printMatrix(){
+
+  }
+
+  public static void populateMatrix(){
+
+  }
+  public static void flipMatrix(){
+
+  }
+
   public static void main(String[] args) {
-    System.out.print("Please enter a Nummber:");
     Scanner scan = new Scanner(System.in);
-    System.out.print("Please enter a number");
+    Matrix array;
+
+    System.out.print("Please enter a Nummber:");
+
 
     try {
       int input = Integer.parseInt(scan.nextLine());
-      if (input<0);{
+      if (input<0){
         System.out.println("Cannot accept negative numbers");
-        break;
+        scan.close();
+        return;
 
-      } else{
-        Matrix()
-
+      }else{
+      array = new Matrix (input);
+      printMatrix();
       }
 
 
     } catch (Exception e) {
       // TODO: handle exception
-      System.out.println("Input was not a number" + e);
+      System.out.println("Input was not a integer " + e);
 
     }
+  scan.close();
+
   }
 }
