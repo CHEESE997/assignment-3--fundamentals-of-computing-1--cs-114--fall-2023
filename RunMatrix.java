@@ -11,6 +11,7 @@ public class RunMatrix {
 
     try {
       int input = Integer.parseInt(scan.nextLine());
+
       if (input<0){
         System.out.println("Cannot accept negative numbers");
         scan.close();
@@ -27,10 +28,7 @@ public class RunMatrix {
       array.printMatrix();
 
       }
-
-
     } catch (Exception e) {
-      // TODO: handle exception
       System.out.println("Input was not a integer " + e);
 
     }
