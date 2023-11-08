@@ -21,7 +21,13 @@ private final int lengthOfMatrix;
       }
     }
       public void populateMatrix(){
-
+        //row
+        for(int i = 0; i<lengthOfMatrix; i++) {
+          //column
+          for(int j = 0; i<lengthOfMatrix; i++) {
+            matrix[i][j] = (lengthOfMatrix*i+j);
+          }
+        }
       }
       public void flipMatrix(){
 
