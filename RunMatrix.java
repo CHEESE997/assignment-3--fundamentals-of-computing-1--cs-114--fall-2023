@@ -1,17 +1,5 @@
 import java.util.Scanner;
 
-public class RunMatrix {
-
-  public static void printMatrix(){
-
-  }
-
-  public static void populateMatrix(){
-
-  }
-  public static void flipMatrix(){
-
-  }
 
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
