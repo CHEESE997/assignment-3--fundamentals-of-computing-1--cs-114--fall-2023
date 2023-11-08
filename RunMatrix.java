@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+public class RunMatrix {
 
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
@@ -17,7 +18,14 @@ import java.util.Scanner;
 
       }else{
       array = new Matrix (input);
-      printMatrix();
+      array.printMatrix();
+      System.out.println();
+      array.populateMatrix();
+      array.printMatrix();
+      System.out.println();
+      array.flipMatrix();
+      array.printMatrix();
+
       }
 
 
